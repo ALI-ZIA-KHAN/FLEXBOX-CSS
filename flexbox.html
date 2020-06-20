@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+<style>
+	/***to make webpg responsive*/
+	@media(min-width:768px){
+.container-1{
+/**row formation of boxes*/
+	display:flex;
+	/*align-items:flex-start(left-bydefault);
+	align-items:flex-end(right);
+	align-items:flex-center;
+	*/
+	/*flex-direction:column;
+	*/
+}
+
+.container-2{
+	display:flex;
+	/**justtify-content:flex-start(top)-bydefault;
+	justtify-content:flex-end(bottom);
+   justtify-content:center;
+*/
+    justify-content:space-between;/*(space between boxes here)
+    /*justify-content:space-around(to hv space along side of pgs as well);
+    */
+}
+.container-3{
+	display:flex;
+	flex-wrap: wrap;/*(box-12 comes in bottom here)*/
+	justify-content:space-between;
+}
+.container-1 div, .container-2 div, .container-3 div{
+	border: 1px #ccc solid;
+	padding:10px;
+}
+.box-1{
+	flex:2;/*(width of box here,grtr no. grtr width)*/
+	order:2;/*(box 1 comes on second no.)*/
+}
+.box-2{
+	flex:1;
+	order:1;
+}
+.box-3{
+	flex:1;
+	order:3;
+}
+.container-2-box{
+	flex-basis:27%;
+	/*width;27%*/
+}
+.container-3-box{
+	flex-basis:15%;
+	/*width;15%*/
+}
+
+</style>
+</head>
+<body>
+<div class="container-1">
+	<div class="box-1">
+		<h3>Box one</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="box-2">
+		<h3>Box two</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="box-3">
+		<h3>Box three</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+<div class="container-2">
+	<div class="container-2-box">
+		<h3>Box four</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-2-box">
+		<h3>Box five</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-2-box">
+		<h3>Box six</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	</div>
+<div class="container-3">
+	<div class="container-3-box">
+		<h3>Box 7</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-3-box">
+		<h3>Box 8</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-3-box">
+		<h3>Box 9</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+
+    <div class="container-3-box">
+	
+		<h3>Box 10</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-3-box">
+		<h3>Box 11</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="container-3-box">
+		<h3>Box 12</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	</div>	
+
+
+</body>
+</html>
